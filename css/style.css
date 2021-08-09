@@ -1,0 +1,285 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: rgba(0,0,0,1);
+  color:rgba(255,255,255,1);
+}
+.estructura {
+  position: relative;
+  width:100%;
+  display:block;
+  margin:auto;
+  text-align:center;
+}
+.contenido:nth-child(odd) {
+  background-color: rgb(65, 158, 70);
+  color:black;
+  padding:50px;
+  border:solid 5px black;
+  border-radius: 20px;
+}
+.contenido:nth-child(even) {
+  background-color: black;
+  color:rgb(65, 158, 70);
+  padding:50px;
+  border:solid 5px rgb(65, 158, 70);
+  border-radius: 20px;
+}
+.info {
+  width: 1024px;
+  margin: auto;
+}
+.info h1 {
+  font-size: 60px;
+  background-color:#dfd554;
+  font-family: Tahoma, Geneva, sans-serif;
+  border:solid 5px white;
+  border-radius: 20px;
+  padding: 10px;
+  display: inline-block;
+  box-shadow:0px 0px 10px 2px rgba(0,0,0,8);
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+}
+.info p {
+  border:solid 3px #dfd554;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.info li {
+  list-style:none;
+  margin: 30px;
+}
+.imgagen img {
+  border:solid 3px #dfd554;
+  border-radius: 10px;
+}
+.nav a {
+  color: #dfd554;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration:none;
+  padding: 0 10px;
+  letter-spacing: 2px;
+  font-family: Tahoma, Geneva, sans-serif;
+
+}
+.nav a:hover {
+  color: #343434;
+  margin: 0 auto;
+}
+.nav {
+  border-bottom: 4px solid rgba(255,255,255,50);
+  flex: 5 auto;
+  margin: 0 auto;
+  margin-top: -50px;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  position:fixed;
+  z-index:2;
+  display:block;
+  flex: 5 auto;
+  margin-left: 400px;
+}
+.logo {
+  size: 30px
+}
+
+.footer {
+  background: rgb(26, 99, 26);
+  margin-top: 10px;
+  height: 350px;
+}
+.footerLogo {
+height: 250px;
+  border-bottom: solid 1px #f7f7f7;
+}
+.footerLogo img {
+  display: flex;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.redesSociales {
+  display: inline;
+  margin: auto;
+}
+
+.footerLogo h1 {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  letter-spacing: 2px;
+  font-family: "Arimo", sans-serif;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.aside {
+  /*background-color: #7d5a5a;*/
+  flex: 1 1 600px;
+  margin: 10px 50px 10px 0;
+}
+.aside img {
+  width: 100%;
+  height: 200px;
+  width: 500px;
+}
+
+h4 {
+  background: red;
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+svg {
+  width: 35px;
+  margin-left: 20px;
+  margin-top: 20px;
+  justify-content: center;
+  cursor: pointer;
+}
+.icon-facebook {
+  fill: white;
+}
+.icon-facebook:hover {
+  fill: #006692;
+}
+.icon-instagram {
+  fill: white;
+}
+.icon-instagram:hover {
+  fill: rgb(133, 9, 85);
+}
+.icon-twitter {
+  fill: white;
+}
+.icon-twitter:hover {
+  fill: #00acee;
+}
+.icon-youtube {
+  fill: white;
+}
+.icon-youtube:hover {
+  fill: #c4302b;
+}
+.icon-snapchat {
+  fill: white;
+}
+.icon-snapchat:hover {
+  fill: #fffc00;
+}
+
+/************** CONTACTO ***************/
+label {
+  display: block;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+.formulario {
+  display: block;
+  margin: 0 auto;
+  width: 510px;
+  color: #971515;
+  font-family: Arial;
+}
+form {
+  margin: 0 auto;
+  width: 400px;
+}
+
+input,
+textarea {
+  width: 380px;
+  height: 27px;
+  background: #131212;
+  border: 2px solid #f6f6f6;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+textarea {
+  height: 150px;
+}
+
+#submit {
+  width: 85px;
+  height: 35px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/************ Responsive design ********/
+
+@media all and (max-width: 1122px) {
+  .section {
+    flex-direction: column;
+  }
+  .imagenes {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 10px 0;
+  }
+  h1 {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .imagenes {
+    flex-direction: column;
+  }
+  .info {
+    font-size: 16px;
+  }
+
+  input,
+  textarea {
+    width: 380px;
+    height: 27px;
+    background: #131212;
+    border: 2px solid #f6f6f6;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 10px;
+    color: #ffffff;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  #submit {
+    width: 85px;
+    height: 35px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
+
+@media all and (max-width: 680px) {
+  .nav a {
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width: 564px) {
+  .nav a {
+    font-size: 7px;
+  }
+  h1 {
+    font-size: 12px;
+  }
+}
